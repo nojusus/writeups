@@ -1,5 +1,5 @@
-Running the command
+Download the provided "Computer-Password-Security-Hacker - Copy.jpg" file and run the command
 ```bash
-exiftool 'Computer-Password-Security-Hacker - Copy.jpg'
+exiftool "Computer-Password-Security-Hacker - Copy.jpg" | grep "flag"
 ```
-and scrolling down to Owner Name, the flag is revealed.
+to get the flag.
