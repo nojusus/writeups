@@ -1,5 +1,5 @@
-Running the command
+Download the provided file "3UWLBAUCb9Z2.jpg" and run the command
 ```bash
-exiftool 3UWLBAUCb9Z2.jpg
+exiftool 3UWLBAUCb9Z2.jpg | grep "flag"
 ```
-and scrolling down to the Camera Serial Number, the flag is revealed.
+to get the flag.
