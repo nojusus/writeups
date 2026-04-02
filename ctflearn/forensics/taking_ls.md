@@ -1,13 +1,8 @@
-Once the zip file is extracted, a file "The Flag.pdf" can be found that that requires a password. Running the command
+Download the provided file "The Flag.zip" and extract it. Enter the extracted folder's "The Flag" directory and run the command
 ```bash
 ls -la
 ```
-shows a hidden directory .ThePassword. The directory can be accessed with
-```bash
-cd .ThePassword
-```
-Running the first command again, a hidden file "ThePassword.txt" can be found that can be read with
+This command reveals a hidden directory ".ThePassword". Access it and run the same command again. You will find a "ThePassword.txt" file that can be read with the command
 ```bash
 cat ThePassword.txt
 ```
-that reveals a password that is used for the pdf file, which reveals the flag.
