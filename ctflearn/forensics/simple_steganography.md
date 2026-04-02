@@ -1,13 +1,13 @@
-Running the command
+Download the provided file "Minions1.jpeg" and run the command
 ```bash
-strings Minions1.jpeg
+strings Minions1.jpeg | head -n 4 | tail -n 1
 ```
-and scrolling to the top of the output, a password "myadmin" can be found. Using the command
+to get a password. Run the command
 ```bash
 steghide extract -sf Minions1.jpeg
 ```
-and typing in the found password, a file "raw.txt" is extracted, containing a string that is encoded with base64. The string is decodable with
+and enter the found password. A new file is extracted with an encoded string. Decode it with the command
 ```bash
-echo "AEMAVABGAGwAZQBhAHIAbgB7AHQAaABpAHMAXwBpAHMAXwBmAHUAbgB9" | base64 -d
+echo YourStringHere | base64 -d
 ```
-and the flag gets revealed.
+to get the flag.
