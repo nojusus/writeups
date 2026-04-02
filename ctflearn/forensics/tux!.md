@@ -1,4 +1,4 @@
-Download the provided "Tux.jpg" file and run the command
+Download the provided file "Tux.jpg" and run the command
 ```bash
 file Tux.jpg
 ```
