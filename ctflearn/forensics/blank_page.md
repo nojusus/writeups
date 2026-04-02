@@ -1,1 +1,1 @@
-The file contains no information other than binary data of dots and spaces. Using CyberChef to replace dots with 1's and spaces with 0's, and then extracting the message from binary reveals the flag.
+Download the provided file "TheMessage.txt" and go to https://gchq.github.io/CyberChef/. Drag and drop the downloaded file into "Input". Add 2 "Find / Replace" operations. In the first one, paste the space character in "Find" and "Replace" with 0. In the second one, paste the dot character in "Find" and "Replace" with 1. Add a "From Binary" operation to get the flag.
