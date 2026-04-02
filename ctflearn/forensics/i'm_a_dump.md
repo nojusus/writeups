@@ -1,5 +1,5 @@
-Running the command
+Download the provided file "file" and run the command
 ```bash
-strings file
+strings file | grep -A 2 "CTF"
 ```
-and looking at the output at the beginning, the flag is revealed, but the H letters must be removed.
+Remove all "H" characters from the output to get the flag.
