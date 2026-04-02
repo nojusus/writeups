@@ -1,5 +1,9 @@
-Opening the "data.pcap" file in Wireshark and searching for "http.request.method", a POST method can be found and traced along with Right Click > Follow > TCP Stream and locating the password. The password is under a base64 encoding, that also contains a wrong tail. Firstly, change the tail from "%3D%3D" to "==" to get a decodable string, then decode the string with
+Download the provided "data.pcap" file and run the command
 ```bash
-echo "UEFwZHNqUlRhZQ==" | base64 -d
+wireshark data.pcap
 ```
-to produce a string, that you can wrap inside the most common prefix to produce the actual flag.
+Search for a filter "http" and find the frame 105. Right click on the frame and go "Follow" > "TCP Stream". Type in "pswrd" inside "Find:" and copy the found string. Replace the string's tail from "%3D%3D" to "==" and decode it with the command
+```bash
+echo YourStringHere | base64 -d
+```
+to get the flag.
