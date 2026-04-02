@@ -1,5 +1,5 @@
-Running the command
+Download the file "RubberDuck.jpg" and run the command
 ```bash
 file RubberDuck.jpg
 ```
-reveals a comment that contains the flag.
+to find the flag.
