@@ -1,5 +1,5 @@
-Running the command
+Download the provided file "Pho.jpg" and run the command
 ```bash
-xxd Pho.jpg
+xxd Pho.jpg | grep -A 4 C..T
 ```
-and scrolling to the top of the output, the flag can be assembled by each character.
+Assemble a string out of the found characters to get the flag.
