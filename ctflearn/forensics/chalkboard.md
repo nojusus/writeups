@@ -1,5 +1,5 @@
-Running the command
+Download the provided file "math.jpg" and run the command
 ```bash
-exiftool math.jpg
+exiftool math.jpg | grep Comment
 ```
-reveals a comment that provides the solution to acquiring the flag.
+Solve the math equation to get the flag.
