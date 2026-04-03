@@ -1,8 +1,8 @@
-Examining the image with
+Download the provided file "HailCaesar.jpg" and run the command
 ```bash
-strings HailCaesar.jpg
+file HailCaesar.jpg
 ```
-and scrolling to the top of the output, reveals a few fake flags and encoded strings. The fake flags provide a clue that a shift of all printable ASCII characters is necessary. For this purpose, a Python program is a good choice.
+The last comment is encrypted with a Caesar cipher. Decrypt it using this program:
 ```python
 def decrypt(cipher_text, shift):
   result = ""
@@ -24,4 +24,4 @@ def brute_force(cipher_text):
 cipher = input("Enter cipher text: ")
 brute_force(cipher)
 ```
-Running this program and inserting the first string reveals no information, and the second string is encoded in base64, but also serves no purpose. The answer is in the third and final string, which reveals the flag on Shift 18.
+Paste the copied comment and go to Shift 18 to get the flag.
