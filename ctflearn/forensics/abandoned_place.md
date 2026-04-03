@@ -1,1 +1,1 @@
-Download the provided file "abandoned_street_challenge2.jpg" and go to https://hexed.it. Click "Open file", select the downloaded file, go to "Search for" and look for 03 84 bytes. Change them to 07 D0, click "Export" and save it. Open the new file to get the flag.
+Download the provided file "abandoned_street_challenge2.jpg" and go to https://hexed.it. Click "Open file", select the downloaded file, go to "Search for" and look for 03 84 bytes. Change them to 07 D0, click "Export" and save it. Open the new file to view the flag.
