@@ -52,4 +52,4 @@ for r in range(modules):
 message = ''.join(t for _, _, t in chunks)
 print(message)
 ```
-The program outputs an encoded string. Go to https://base64.guru/converter/decode/image/png and convert the string into a "PNG" file. Scan the QR code to get the flag.
+The program prints an encoded string. Go to https://base64.guru/converter/decode/image/png and convert the string into a "PNG" file. Scan the QR code to get the flag.
