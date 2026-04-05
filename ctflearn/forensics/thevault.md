@@ -1,10 +1,6 @@
-Extracting the zip file "TheVault.zip", 4 files are acquired. The readme file provides some context but no real hints. Running the command
-```bash
-strings Vault.jpg
-```
-and scrolling to the top of the output, a fake flag and 2 actual hints can be found. We know that it's necessary to use printable ASCII characters with a ROT cipher. Analyzing the image file in HexEd, multiple FF D9 markers can be found which signify hidden data. Locate the first FF D9 marker and export all the bytes after it as a new image. All that's left to do is to take in printable ASCII characters and brute force the ROT cipher to locate the flag. A Python program is a good solution for this purpose.
+Download the provided file "TheVault.zip" and extract it. Go to https://hexed.it and open the file "Vault.jpg". Export the trailer after the FF D9 marker as a new image. Brute force the ROT cipher using this program:
 ```python
-data = open('bytes.jpg', 'rb').read()
+data = open('trailer.jpg', 'rb').read()
 
 printable = [b for b in data if 32 <= b <= 126]
 
@@ -25,4 +21,4 @@ for shift in range(95):
       print(f"Shift {shift}: {flag}")
     start = idx + 1
 ```
-Running this program reveals the flag that appears on Shift 17.
+to get the flag on Shift 17.
