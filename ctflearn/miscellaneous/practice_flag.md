@@ -1,1 +1,1 @@
-The flag is in the description of the challenge. Why are you here?
+Get the flag from the description of the challenge.
