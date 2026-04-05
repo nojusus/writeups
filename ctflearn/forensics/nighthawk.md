@@ -1,4 +1,4 @@
-I reused the 2 scripts written by kcbowhunter from his TheVault challenge. Firstly, the Jpeg1.py file:
+Download the provided file "Nighthawk.jpg" and use the 2 programs provided by the challenge's author. The first program:
 ```python
 #!/usr/bin/python3
 
@@ -186,7 +186,7 @@ if __name__ == "__main__":
 
 	print("All Done!")
 ```
-Then the ExtractBytes.py file:
+The second program:
 ```python
 #!/usr/bin/python3
 
@@ -242,19 +242,19 @@ if __name__ == "__main__":
 
     print("All Done!")
 ```
-To start, run the command
+Run the command
 ```bash
-python3 Jpeg1.py Nighthawk.jpg
+python3 1.py Nighthawk.jpg
 ```
-and look for the APP3 marker. That's where the hidden data is. Find it's offset, length and extract it using the second script with
+and find the APP3 marker. Copy the offset, length and run the command
 ```bash
-python3 ExtractBytes.py Nighthawk.jpg app3.bin 20295 266
+python3 2.py Nighthawk.jpg app3.bin YourOffsetHere YourLengthHere
 ```
-Running the command
+Run the command
 ```bash
 strings app3.bin -n 1
 ```
-reveals an id made up of 4 words, whose first letters spell FLAG. Create a string of the scattered letters after the id and decode it by shifting pairs of characters within the printable ASCII range, basically processing 2 ciphertext characters at a time and applying a shift that increases after each pair. Make sure to add an extra backslash \ symbol in your string right after the first one, so Python doesn't get confused. Running the program
+and turn the scattered letters into a string. Make sure to add an extra backslash next to the backslash, so Python can read the string. Use this program:
 ```python
 def decode(ct):
     result = ""
@@ -274,7 +274,7 @@ def decode(ct):
         shift += 1
     return result
 
-ct = "DSHjh^vj!G6]ram]mVP#<&CS[\\uZ$Yqg|l"
+ct = "YourStringHere"
 print(decode(ct))
 ```
-reveals the flag.
+to get the flag.
