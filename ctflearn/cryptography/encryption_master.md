@@ -1,0 +1,1 @@
+Download the provided file "Here ya go!.txt" and go to https://gchq.github.io/CyberChef. Paste the encoded string into "Input" and add the operation "From Base64". Paste the next string and add the operation "From Hex". Paste the next one and add the operation "From Binary". Paste the last one and add the operation "From Base64" to get the flag.
