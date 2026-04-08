@@ -1,0 +1,1 @@
+Download the provided file "qrcode.39907201.png" and go to https://webqr.com to scan the QR code. Copy the output and go to https://gchq.github.io/CyberChef. Paste the string into "Input" and add the operations "From Base64" and "ROT13" to get the flag.
