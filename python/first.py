@@ -1,4 +1,4 @@
-with open("file.txt", "r") as f:
+with open("first.txt", "r") as f:
     read = f.read()
 
 # Extract specific line to get the "flag"
